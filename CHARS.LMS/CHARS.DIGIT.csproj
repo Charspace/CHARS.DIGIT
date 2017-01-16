@@ -1,0 +1,646 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="14.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{E0898442-830F-4F04-8C55-B1BC3938E3D7}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>CHARS.LMS</RootNamespace>
+    <AssemblyName>CHARS.LMS</AssemblyName>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>2.0</OldToolsVersion>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CHARS.HR.BLL, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\CHARS.HR\CHARS.HR.PL\bin\Debug\CHARS.HR.BLL.dll</HintPath>
+    </Reference>
+    <Reference Include="CHARS.HR.BOL, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL" />
+    <Reference Include="CHARS.HR.COMMON, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\CHARS.HR.COMMON.dll</HintPath>
+    </Reference>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=10.2.3600.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Enterprise.Framework, Version=10.2.3600.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.Enterprise.InfoStore, Version=10.2.3600.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=10.2.3600.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Shared, Version=10.2.3600.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Windows.Forms.Ribbon, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Library\System.Windows.Forms.Ribbon.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CharSpace.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CharSpace.designer.cs">
+      <DependentUpon>CharSpace.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Crystal\CRPT_CommonPreview.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CRPT_CommonPreview.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="General\LuckyMasterConst.cs" />
+    <Compile Include="General\LuckyMasterEnum.cs" />
+    <Compile Include="List\Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="List\Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="List\LstAgent.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="List\LstAgent.designer.cs">
+      <DependentUpon>LstAgent.cs</DependentUpon>
+    </Compile>
+    <Compile Include="List\LstCompetator.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="List\LstCompetator.designer.cs">
+      <DependentUpon>LstCompetator.cs</DependentUpon>
+    </Compile>
+    <Compile Include="List\LstDetail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="List\LstDetail.designer.cs">
+      <DependentUpon>LstDetail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="List\LstGain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="List\LstGain.designer.cs">
+      <DependentUpon>LstGain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="List\LstList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="List\LstList.designer.cs">
+      <DependentUpon>LstList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="List\LstLucyType.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="List\LstLucyType.designer.cs">
+      <DependentUpon>LstLucyType.cs</DependentUpon>
+    </Compile>
+    <Compile Include="List\LstMaster.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="List\LstMaster.designer.cs">
+      <DependentUpon>LstMaster.cs</DependentUpon>
+    </Compile>
+    <Compile Include="List\LstPeriod.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="List\LstPeriod.designer.cs">
+      <DependentUpon>LstPeriod.cs</DependentUpon>
+    </Compile>
+    <Compile Include="List\LstPerson.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="List\LstPerson.designer.cs">
+      <DependentUpon>LstPerson.cs</DependentUpon>
+    </Compile>
+    <Compile Include="List\LstPlayer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="List\LstPlayer.designer.cs">
+      <DependentUpon>LstPlayer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="List\LstResult.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="List\LstResult.designer.cs">
+      <DependentUpon>LstResult.cs</DependentUpon>
+    </Compile>
+    <Compile Include="List\LstSubmit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="List\LstSubmit.designer.cs">
+      <DependentUpon>LstSubmit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Process\ProGain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Process\ProGain.designer.cs">
+      <DependentUpon>ProGain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Process\ProList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Process\ProList.designer.cs">
+      <DependentUpon>ProList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Process\ProResult.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Process\ProResult.designer.cs">
+      <DependentUpon>ProResult.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="CharSpace.resx">
+      <DependentUpon>CharSpace.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Crystal\CRPT_CommonPreview.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CRPT_CommonPreview.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="List\LstAgent.resx">
+      <DependentUpon>LstAgent.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="List\LstCompetator.resx">
+      <DependentUpon>LstCompetator.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="List\LstDetail.resx">
+      <DependentUpon>LstDetail.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="List\LstGain.resx">
+      <DependentUpon>LstGain.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="List\LstList.resx">
+      <DependentUpon>LstList.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="List\LstLucyType.resx">
+      <DependentUpon>LstLucyType.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="List\LstMaster.resx">
+      <DependentUpon>LstMaster.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="List\LstPeriod.resx">
+      <DependentUpon>LstPeriod.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="List\LstPerson.resx">
+      <DependentUpon>LstPerson.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="List\LstPlayer.resx">
+      <DependentUpon>LstPlayer.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="List\LstResult.resx">
+      <DependentUpon>LstResult.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="List\LstSubmit.resx">
+      <DependentUpon>LstSubmit.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Process\ProGain.resx">
+      <DependentUpon>ProGain.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Process\ProList.resx">
+      <DependentUpon>ProList.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Process\ProResult.resx">
+      <DependentUpon>ProResult.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\Cri\CriAgentComission.resx">
+      <DependentUpon>CriAgentComission.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\Cri\CriGainLose.resx">
+      <DependentUpon>CriGainLose.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\Cri\CriSubmit.resx">
+      <DependentUpon>CriSubmit.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Content Include="Report\Crystal\rptCommonPreview.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptCommonPreview.cs</LastGenOutput>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Report\Crystal\rptSubmit.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptSubmit.cs</LastGenOutput>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Report\Crystal\rptSubmitCheck.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptSubmitCheck.cs</LastGenOutput>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Report\Crystal\rptSubmitCheckClear.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptSubmitCheckClear.cs</LastGenOutput>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Report\Crystal\rptAgentGainLose.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptAgentGainLose.cs</LastGenOutput>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Report\Crystal\rptPlayerGainLose.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptPlayerGainLose.cs</LastGenOutput>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Report\Crystal\rptMasterGainLose.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptMasterGainLose.cs</LastGenOutput>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Report\Crystal\rptAgentComission.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptAgentComission.cs</LastGenOutput>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <EmbeddedResource Include="Report\GenrealPreview.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>GenrealPreview.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Setup\SetAgent.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>SetAgent.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Setup\SetCompetator.resx">
+      <DependentUpon>SetCompetator.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Setup\SetGain.resx">
+      <DependentUpon>SetGain.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Setup\SetList.resx">
+      <DependentUpon>SetList.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Setup\SetListVote.resx">
+      <DependentUpon>SetListVote.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Setup\SetLuckyType.resx">
+      <DependentUpon>SetLuckyType.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Setup\SetMaster.resx">
+      <DependentUpon>SetMaster.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Setup\SetPeriod.resx">
+      <DependentUpon>SetPeriod.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Setup\SetPerson.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>SetPerson.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Setup\SetPlayer.resx">
+      <DependentUpon>SetPlayer.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Setup\SetResult.resx">
+      <DependentUpon>SetResult.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Setup\SetSubmit.resx">
+      <DependentUpon>SetSubmit.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Setup\SetSubmitDetail.resx">
+      <DependentUpon>SetSubmitDetail.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Setup\SetSubmitEdit.resx">
+      <DependentUpon>SetSubmitEdit.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Report\Cri\CriAgentComission.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Report\Cri\CriAgentComission.designer.cs">
+      <DependentUpon>CriAgentComission.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Report\Cri\CriGainLose.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Report\Cri\CriGainLose.designer.cs">
+      <DependentUpon>CriGainLose.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Report\Cri\CriSubmit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Report\Cri\CriSubmit.designer.cs">
+      <DependentUpon>CriSubmit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Report\Crystal\rptAgentComission.cs">
+      <DependentUpon>rptAgentComission.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Report\Crystal\rptMasterGainLose.cs">
+      <DependentUpon>rptMasterGainLose.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Report\Crystal\rptPlayerGainLose.cs">
+      <DependentUpon>rptPlayerGainLose.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Report\Crystal\rptAgentGainLose.cs">
+      <DependentUpon>rptAgentGainLose.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Report\Crystal\rptCommonPreview.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rptCommonPreview.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Compile>
+    <Compile Include="Report\Crystal\rptSubmit.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rptSubmit.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Compile>
+    <Compile Include="Report\Crystal\rptSubmitCheck.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rptSubmitCheck.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Compile>
+    <Compile Include="Report\Crystal\rptSubmitCheckClear.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rptSubmitCheckClear.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Compile>
+    <Compile Include="Report\Dataset\DS_GainLose.cs">
+      <DependentUpon>DS_GainLose.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Report\Dataset\ds.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ds.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Report\Dataset\DS_CommonPreview.cs">
+      <DependentUpon>DS_CommonPreview.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Report\Dataset\DS_CommonPreview.designer.cs">
+      <DependentUpon>DS_CommonPreview.xsd</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Report\Dataset\DS_GainLose.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DS_GainLose.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Report\GenrealPreview.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>GenrealPreview.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Setup\SetAgent.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Setup\SetAgent.designer.cs">
+      <DependentUpon>SetAgent.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Setup\SetCompetator.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Setup\SetCompetator.designer.cs">
+      <DependentUpon>SetCompetator.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Setup\SetGain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Setup\SetGain.designer.cs">
+      <DependentUpon>SetGain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Setup\SetList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Setup\SetList.designer.cs">
+      <DependentUpon>SetList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Setup\SetListVote.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Setup\SetListVote.designer.cs">
+      <DependentUpon>SetListVote.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Setup\SetLuckyType.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Setup\SetLuckyType.designer.cs">
+      <DependentUpon>SetLuckyType.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Setup\SetMaster.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Setup\SetMaster.designer.cs">
+      <DependentUpon>SetMaster.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Setup\SetPeriod.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Setup\SetPeriod.designer.cs">
+      <DependentUpon>SetPeriod.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Setup\SetPerson.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Setup\SetPerson.Designer.cs">
+      <DependentUpon>SetPerson.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Setup\SetPlayer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Setup\SetPlayer.designer.cs">
+      <DependentUpon>SetPlayer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Setup\SetResult.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Setup\SetResult.designer.cs">
+      <DependentUpon>SetResult.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Setup\SetSubmit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Setup\SetSubmit.designer.cs">
+      <DependentUpon>SetSubmit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Setup\SetSubmitDetail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Setup\SetSubmitDetail.designer.cs">
+      <DependentUpon>SetSubmitDetail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Setup\SetSubmitEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Setup\SetSubmitEdit.designer.cs">
+      <DependentUpon>SetSubmitEdit.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CHARS.LMS.BOL\CHARS.DIGIT.BOL.csproj">
+      <Project>{7930C872-6A33-48FE-B7F7-DC4B999C6F1F}</Project>
+      <Name>CHARS.DIGIT.BOL</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{967B4E0D-AD0C-4609-AB67-0FA40C0206D8}" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\charspace.jpg" />
+    <None Include="Report\Dataset\DS_GainLose.xsc">
+      <DependentUpon>DS_GainLose.xsd</DependentUpon>
+    </None>
+    <None Include="Report\Dataset\DS_GainLose.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <SubType>
+      </SubType>
+      <LastGenOutput>DS_GainLose.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Report\Dataset\DS_GainLose.xss">
+      <DependentUpon>DS_GainLose.xsd</DependentUpon>
+    </None>
+    <None Include="Report\Dataset\ds.xsc">
+      <DependentUpon>ds.xsd</DependentUpon>
+    </None>
+    <None Include="Report\Dataset\ds.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ds.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Report\Dataset\ds.xss">
+      <DependentUpon>ds.xsd</DependentUpon>
+    </None>
+    <None Include="Report\Dataset\DS_CommonPreview.xsc">
+      <DependentUpon>DS_CommonPreview.xsd</DependentUpon>
+    </None>
+    <None Include="Report\Dataset\DS_CommonPreview.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DS_CommonPreview.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Report\Dataset\DS_CommonPreview.xss">
+      <DependentUpon>DS_CommonPreview.xsd</DependentUpon>
+    </None>
+    <None Include="Resources\charspace1.jpg" />
+    <Content Include="Resources\Close.png" />
+    <Content Include="Resources\CS_Close.png" />
+    <Content Include="Resources\menu icon.png" />
+    <Content Include="Resources\menu icon1.png" />
+    <Content Include="Resources\new7.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="SQL\" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
