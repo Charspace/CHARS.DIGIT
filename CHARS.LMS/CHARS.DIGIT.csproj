@@ -585,6 +585,10 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Resources\charspace.jpg" />
+    <None Include="RefDll\dbConnection.bin" />
+    <None Include="RefDll\LoginUser.bin" />
+    <None Include="RefDll\sysLicense.bin" />
+    <None Include="RefDll\sysOrganizaton.bin" />
     <None Include="Report\Dataset\DS_GainLose.xsc">
       <DependentUpon>DS_GainLose.xsd</DependentUpon>
     </None>
