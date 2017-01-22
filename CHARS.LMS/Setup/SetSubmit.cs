@@ -214,6 +214,7 @@ namespace CHARS.HR.PL.Setup
             cboPlayer.AutoCompleteMode = AutoCompleteMode.SuggestAppend;
             cboPlayer.AutoCompleteSource = AutoCompleteSource.CustomSource;
             cboPlayer.AutoCompleteCustomSource.AddRange(mUtility.getAutoCompleList(playerTbl, "Player Code"));
+            cboPlayer.SelectedIndex = 0;
         }
         private void loadAgent()
         {
@@ -234,6 +235,7 @@ namespace CHARS.HR.PL.Setup
             cboMaster.AutoCompleteMode = AutoCompleteMode.SuggestAppend;
             cboMaster.AutoCompleteSource = AutoCompleteSource.CustomSource;
             cboMaster.AutoCompleteCustomSource.AddRange(mUtility.getAutoCompleList(masterTbl, "Master Code"));
+            cboMaster.SelectedIndex = 0;
         }
         private void loadPeriod()
         {

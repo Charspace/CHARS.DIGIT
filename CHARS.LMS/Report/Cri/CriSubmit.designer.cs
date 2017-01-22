@@ -72,30 +72,33 @@ namespace CHARS.LMS.List
             // 
             // grbControl
             // 
-            this.grbControl.Location = new System.Drawing.Point(3, 657);
-            this.grbControl.Size = new System.Drawing.Size(1269, 43);
+            this.grbControl.Location = new System.Drawing.Point(3, 663);
+            this.grbControl.Size = new System.Drawing.Size(1348, 37);
             // 
             // btnClose
             // 
-            this.btnClose.Location = new System.Drawing.Point(1365, 16);
+            this.btnClose.Location = new System.Drawing.Point(1655, 13);
             this.btnClose.Text = "&Close";
+            this.btnClose.Visible = false;
             this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
             // 
             // btnPreview
             // 
-            this.btnPreview.Location = new System.Drawing.Point(1276, 16);
+            this.btnPreview.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)));
+            this.btnPreview.Location = new System.Drawing.Point(614, 10);
+            this.btnPreview.Size = new System.Drawing.Size(100, 24);
             this.btnPreview.Click += new System.EventHandler(this.btnPreview_Click);
             // 
             // pan
             // 
-            this.pan.Size = new System.Drawing.Size(1275, 703);
+            this.pan.Size = new System.Drawing.Size(1354, 703);
             // 
             // grbList
             // 
             this.grbList.Controls.Add(this.groupBox3);
             this.grbList.Controls.Add(this.groupBox2);
             this.grbList.Controls.Add(this.groupBox1);
-            this.grbList.Size = new System.Drawing.Size(1275, 703);
+            this.grbList.Size = new System.Drawing.Size(1354, 703);
             this.grbList.Controls.SetChildIndex(this.grbControl, 0);
             this.grbList.Controls.SetChildIndex(this.groupBox1, 0);
             this.grbList.Controls.SetChildIndex(this.groupBox2, 0);
@@ -119,7 +122,9 @@ namespace CHARS.LMS.List
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pictureBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.pictureBox1.Location = new System.Drawing.Point(3, 16);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(495, 633);
@@ -163,13 +168,13 @@ namespace CHARS.LMS.List
             // 
             // groupBox3
             // 
-            this.groupBox3.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-                        | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.groupBox3.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.groupBox3.Controls.Add(this.pictureBox1);
-            this.groupBox3.Location = new System.Drawing.Point(850, 9);
+            this.groupBox3.Location = new System.Drawing.Point(850, 16);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(501, 652);
+            this.groupBox3.Size = new System.Drawing.Size(401, 494);
             this.groupBox3.TabIndex = 160;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Sample";
@@ -214,9 +219,9 @@ namespace CHARS.LMS.List
             // 
             // listBox1
             // 
-            this.listBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-                        | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.listBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.listBox1.FormattingEnabled = true;
             this.listBox1.Items.AddRange(new object[] {
             "rptSubmit.rpt",
@@ -224,7 +229,7 @@ namespace CHARS.LMS.List
             "rptSubmitCheckClear.rpt"});
             this.listBox1.Location = new System.Drawing.Point(9, 16);
             this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(230, 550);
+            this.listBox1.Size = new System.Drawing.Size(230, 537);
             this.listBox1.TabIndex = 154;
             this.listBox1.SelectedIndexChanged += new System.EventHandler(this.listBox1_SelectedIndexChanged);
             // 
@@ -246,8 +251,8 @@ namespace CHARS.LMS.List
             // 
             // groupBox2
             // 
-            this.groupBox2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-                        | System.Windows.Forms.AnchorStyles.Left)));
+            this.groupBox2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
             this.groupBox2.Controls.Add(this.listBox1);
             this.groupBox2.Location = new System.Drawing.Point(599, 10);
             this.groupBox2.Name = "groupBox2";
@@ -291,7 +296,7 @@ namespace CHARS.LMS.List
             this.label1.ForeColor = System.Drawing.SystemColors.ControlText;
             this.label1.Location = new System.Drawing.Point(8, 106);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(74, 15);
+            this.label1.Size = new System.Drawing.Size(76, 15);
             this.label1.TabIndex = 154;
             this.label1.Text = "Total Amount";
             // 
@@ -324,10 +329,9 @@ namespace CHARS.LMS.List
             this.groupBox1.Controls.Add(this.txtList);
             this.groupBox1.Controls.Add(this.cboOperator);
             this.groupBox1.Controls.Add(this.lblList);
-            this.groupBox1.Dock = System.Windows.Forms.DockStyle.Left;
             this.groupBox1.Location = new System.Drawing.Point(3, 16);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(590, 641);
+            this.groupBox1.Size = new System.Drawing.Size(577, 647);
             this.groupBox1.TabIndex = 158;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Filter";
@@ -339,7 +343,7 @@ namespace CHARS.LMS.List
             this.lbltoamount.ForeColor = System.Drawing.SystemColors.ControlText;
             this.lbltoamount.Location = new System.Drawing.Point(342, 87);
             this.lbltoamount.Name = "lbltoamount";
-            this.lbltoamount.Size = new System.Drawing.Size(68, 15);
+            this.lbltoamount.Size = new System.Drawing.Size(70, 15);
             this.lbltoamount.TabIndex = 172;
             this.lbltoamount.Text = "To Amount :";
             // 
@@ -350,7 +354,7 @@ namespace CHARS.LMS.List
             this.lblfromamount.ForeColor = System.Drawing.SystemColors.ControlText;
             this.lblfromamount.Location = new System.Drawing.Point(214, 87);
             this.lblfromamount.Name = "lblfromamount";
-            this.lblfromamount.Size = new System.Drawing.Size(81, 15);
+            this.lblfromamount.Size = new System.Drawing.Size(82, 15);
             this.lblfromamount.TabIndex = 171;
             this.lblfromamount.Text = "From Amount :";
             // 
@@ -405,7 +409,7 @@ namespace CHARS.LMS.List
             this.lblluckyType.ForeColor = System.Drawing.SystemColors.ControlText;
             this.lblluckyType.Location = new System.Drawing.Point(9, 21);
             this.lblluckyType.Name = "lblluckyType";
-            this.lblluckyType.Size = new System.Drawing.Size(73, 15);
+            this.lblluckyType.Size = new System.Drawing.Size(74, 15);
             this.lblluckyType.TabIndex = 145;
             this.lblluckyType.Text = "Lucky Type :";
             // 
@@ -469,7 +473,7 @@ namespace CHARS.LMS.List
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1275, 703);
+            this.ClientSize = new System.Drawing.Size(1354, 703);
             this.Name = "CriSubmit";
             this.Text = "Check Submit";
             this.Controls.SetChildIndex(this.pan, 0);

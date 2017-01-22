@@ -28,8 +28,8 @@ namespace CHARS.LMS.List
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             this.dgvConList = new System.Windows.Forms.DataGridView();
             this.dgvConListAll = new System.Windows.Forms.DataGridView();
             this.cboLuckyType = new System.Windows.Forms.ComboBox();
@@ -68,37 +68,37 @@ namespace CHARS.LMS.List
             // 
             // btnSearch
             // 
-            this.btnSearch.Location = new System.Drawing.Point(479, 14);
+            this.btnSearch.Location = new System.Drawing.Point(608, 14);
             this.toolTipList.SetToolTip(this.btnSearch, "Click to show all");
             this.btnSearch.Click += new System.EventHandler(this.btnSearch_Click);
             // 
             // btnEdit
             // 
-            this.btnEdit.Location = new System.Drawing.Point(229, 14);
+            this.btnEdit.Location = new System.Drawing.Point(358, 14);
             this.toolTipList.SetToolTip(this.btnEdit, "Click to edit selected item");
             this.btnEdit.Click += new System.EventHandler(this.btnEdit_Click);
             // 
             // btnAddNew
             // 
-            this.btnAddNew.Location = new System.Drawing.Point(146, 14);
+            this.btnAddNew.Location = new System.Drawing.Point(275, 14);
             this.toolTipList.SetToolTip(this.btnAddNew, "Click to prepare new item");
             this.btnAddNew.Click += new System.EventHandler(this.btnNew_Click);
             // 
             // btnExport
             // 
-            this.btnExport.Location = new System.Drawing.Point(731, 14);
+            this.btnExport.Location = new System.Drawing.Point(860, 14);
             this.toolTipList.SetToolTip(this.btnExport, "Click to export to outsite");
             this.btnExport.Click += new System.EventHandler(this.btnExport_Click);
             // 
             // btnImport
             // 
-            this.btnImport.Location = new System.Drawing.Point(395, 14);
+            this.btnImport.Location = new System.Drawing.Point(524, 14);
             this.toolTipList.SetToolTip(this.btnImport, "Click to import from outsider");
             this.btnImport.Click += new System.EventHandler(this.btnImport_Click);
             // 
             // btnPreview
             // 
-            this.btnPreview.Location = new System.Drawing.Point(646, 14);
+            this.btnPreview.Location = new System.Drawing.Point(775, 14);
             this.toolTipList.SetToolTip(this.btnPreview, "Click to preview report");
             this.btnPreview.Click += new System.EventHandler(this.btnPreview_Click);
             // 
@@ -109,24 +109,24 @@ namespace CHARS.LMS.List
             // 
             // btnHistory
             // 
-            this.btnHistory.Location = new System.Drawing.Point(312, 14);
+            this.btnHistory.Location = new System.Drawing.Point(441, 14);
             this.toolTipList.SetToolTip(this.btnHistory, "Click to check history of selected item");
             this.btnHistory.Click += new System.EventHandler(this.btnHistory_Click);
             // 
             // btnRefresh
             // 
-            this.btnRefresh.Location = new System.Drawing.Point(563, 14);
+            this.btnRefresh.Location = new System.Drawing.Point(692, 14);
             this.btnRefresh.Click += new System.EventHandler(this.btnRefresh_Click);
             // 
             // dgvConList
             // 
             this.dgvConList.AllowUserToAddRows = false;
             this.dgvConList.AllowUserToDeleteRows = false;
-            dataGridViewCellStyle4.BackColor = System.Drawing.Color.AliceBlue;
-            this.dgvConList.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle4;
-            this.dgvConList.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-                        | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.AliceBlue;
+            this.dgvConList.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle2;
+            this.dgvConList.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.dgvConList.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvConList.Location = new System.Drawing.Point(19, 22);
             this.dgvConList.Name = "dgvConList";
@@ -142,10 +142,11 @@ namespace CHARS.LMS.List
             this.dgvConListAll.AllowUserToAddRows = false;
             this.dgvConListAll.AllowUserToDeleteRows = false;
             this.dgvConListAll.AllowUserToOrderColumns = true;
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.AliceBlue;
-            this.dgvConListAll.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle3;
-            this.dgvConListAll.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.AliceBlue;
+            this.dgvConListAll.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            this.dgvConListAll.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.dgvConListAll.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvConListAll.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvConListAll.Location = new System.Drawing.Point(3, 38);
@@ -175,7 +176,7 @@ namespace CHARS.LMS.List
             this.lblluckyType.ForeColor = System.Drawing.SystemColors.ControlText;
             this.lblluckyType.Location = new System.Drawing.Point(6, 13);
             this.lblluckyType.Name = "lblluckyType";
-            this.lblluckyType.Size = new System.Drawing.Size(76, 15);
+            this.lblluckyType.Size = new System.Drawing.Size(77, 15);
             this.lblluckyType.TabIndex = 164;
             this.lblluckyType.Text = "Lucky Type : ";
             // 
